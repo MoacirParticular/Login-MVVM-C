@@ -1,5 +1,6 @@
 # MVVM-C primeira parte Coordinator.
- 
+###### Aqui [neste repositorio](https://github.com/MoacirParticular/Login-MVVM-C) tem o projeto, baixe o repositorio faça o Tutorial, use o projeto como exemplo altere, crie diversa-se,
+
 ### O que é um Coordinator?
  
 Esta é a última parte do nome desta arquitetura, mas acho que é a parte mais importante. Se você puder implementar apenas uma parte dessa arquitetura como um todo, eu recomendaria que você implementasse esse padrão, pois acho que tem um potencial incrível para melhorar sua estrutura geral de aplicativos.
@@ -256,8 +257,6 @@ func initialize(loginViewModel: LoginViewModel) {
 ViewModel cuida de toda regra de negócio, nunca vai apresentar um dado na tela por exemplo.
 ViewController cuida da parte visual mostrar valores e pegar valores, nunca vai salvar os dados no banco ou mandar para uma api ela vai mandar para a ViewModel que fará isto.
 
-
-### Aqui [neste repositorio](https://github.com/MoacirParticular/Login-MVVM-C) tem o projeto, baixe o repositorio e acompanhe o Tutorial, 
 
 
 ![](https://github.com/MoacirParticular/Login-MVVM-C/blob/main/Arquivos/euNaoAcredito.png)
