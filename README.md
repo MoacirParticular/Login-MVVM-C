@@ -260,7 +260,7 @@ ViewController cuida da parte visual mostrar valores e pegar valores, nunca vai 
 ![](https://github.com/MoacirParticular/Login-MVVM-C/blob/main/Arquivos/euNaoAcredito.png)
  
 
->_nunca deixe de acreditar em si mesmo, você pode, você conseguei, basta você acreditar ir la e fazer_
+>_nunca deixe de acreditar em si mesmo, você pode, você consegue, basta você acreditar, praticar e fazer_
  
 Existe muito material falando sobre este assunto na internet, basta um pouco de paciência e dedicação.
  
