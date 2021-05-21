@@ -256,7 +256,11 @@ func initialize(loginViewModel: LoginViewModel) {
 ViewModel cuida de toda regra de negócio, nunca vai apresentar um dado na tela por exemplo.
 ViewController cuida da parte visual mostrar valores e pegar valores, nunca vai salvar os dados no banco ou mandar para uma api ela vai mandar para a ViewModel que fará isto.
 
+
 ![](https://github.com/MoacirParticular/Login-MVVM-C/blob/main/Arquivos/euNaoAcredito.png)
+ 
+
+>_nunca deixe de acreditar em si mesmo, você pode, você conseguei, basta você acreditar ir la e fazer_
  
 Existe muito material falando sobre este assunto na internet, basta um pouco de paciência e dedicação.
  
