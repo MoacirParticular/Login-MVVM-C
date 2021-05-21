@@ -70,18 +70,6 @@ class LoginView: UIView {
         return btn
     }()
     
-    let buttonNewAccount: UIButton = {
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.frame = .zero
-        btn.backgroundColor = .blue
-        btn.setTitle("Nova conta", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
-        btn.layer.cornerRadius = 10
-        
-        return btn
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -132,11 +120,8 @@ class LoginView: UIView {
             
             buttonLogin.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 12),
             buttonLogin.trailingAnchor.constraint(equalTo: userLabel.trailingAnchor, constant: 0),
+            buttonLogin.widthAnchor.constraint(equalToConstant: 200),
             buttonLogin.heightAnchor.constraint(equalToConstant: 50),
-            
-            buttonNewAccount.topAnchor.constraint(equalTo: buttonLogin.bottomAnchor, constant: 12),
-            buttonNewAccount.trailingAnchor.constraint(equalTo: userLabel.trailingAnchor, constant: 0),
-            buttonNewAccount.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
 }

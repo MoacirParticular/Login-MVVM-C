@@ -23,6 +23,8 @@ public extension UIColor {
         return UIColor(named: "textColor")!
     }
     
-    
-    
+    @objc
+    static var labelColor: UIColor {
+        return UIColor(named: "labelColor")!
+    }
 }

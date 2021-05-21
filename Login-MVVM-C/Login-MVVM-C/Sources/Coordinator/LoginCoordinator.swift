@@ -24,12 +24,22 @@ public class LoginCoordinator: Coordinator {
 
         viewController.onTryingToLogin = { user, pwd  in
             
-            if user == "Moacir" && pwd == "Lindao" {
-                let coordinator = HomeCoordinator(navigationController: self.navigationController)
-                coordinator.start()
-            }
+            LoginViewModel.fetchData(user: user, pwd: pwd, completion: {data in
+                switch data {
+                case .failure: fatalError()
+                case .success(let loginViewModel):
+                    print("Nome do Usuario: \(loginViewModel.userName)")
+                    
+                    self.goToHome(loginViewModel: loginViewModel)
+                }
+            })
         }
 
         self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func goToHome(loginViewModel: LoginViewModel) {
+        let coordinator = HomeCoordinator(navigationController: self.navigationController, loginViewModel: loginViewModel)
+        coordinator.start()
     }
 }
