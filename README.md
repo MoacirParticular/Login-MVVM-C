@@ -92,6 +92,8 @@ Assim você navega dentro do App entre as ViewController
  
  # MVVM-C segunda parte Model-View-View-Model.
  
+ ![](https://github.com/MoacirParticular/Login-MVVM-C/blob/main/Arquivos/mvvm.png)
+ 
  #### O que é um ViewModel?
 Vamos fazer um experimento mental. Pegue um controlador de visão típico e divida-o em duas partes. 
 De um lado, deixe todos os métodos específicos do UIKit/UIViewController e tudo o que lida diretamente com visualizações e sub-visões. 
@@ -114,7 +116,7 @@ Com isso, quero dizer que ele possuirá uma forte referência ao ViewModel, mas 
  
 >Este exemplo é só para explicar o conceito do Model, ViewModel, para que você entenda o MVVM, não considere a vida real, pois uma classe de login teria que ter muitos outros cuidados, tratativa e afins, não estamos aqui fazendo um login verdadeiro.
  
- ##### Model
+ #### Model
  
  Model é a classe que vai receber os dados que podem vir do banco de dados local, de uma api, e assim por diante
  
@@ -127,10 +129,10 @@ Com isso, quero dizer que ele possuirá uma forte referência ao ViewModel, mas 
 ```
 >_Codable é um alias de tipo para os protocolos codificados e decodificados. Quando você usa Codable como um tipo ou restrição genérica, ele corresponde a qualquer tipo que esteja em conformidade com os dois protocolos. [](https://developer.apple.com/documentation/swift/codable)_
  
-_Neste nosso exemplo temos 3 atributos que podem ser nulos nos dados, não estou trazendo o atributo userPassword para mostrar que desta forma não teremos crash, mas se por acaso voce tirar o ? do campo userPassword o aplicativo vai crashar(fechar causando uma quebra)_
+_Neste nosso exemplo temos 3 atributos que podem ser nulos nos dados, não estou trazendo o atributo userPassword para mostrar que desta forma não teremos crash, mas se por acaso você tirar o ? do campo userPassword o aplicativo vai crashar(fechar causando uma quebra)_
  
  
-##### ViewModel
+#### ViewModel
  
 No padrão MVVM 
  
@@ -181,9 +183,11 @@ struct LoginViewModel {
  
 Criei uma instância do Model para receber os dados, este atributo esta private e só pode ser passado no constructor.
  
-Os atributos userName, userLogin e userPassword estão expostos para as outras classe, percebam que estou tratando os valores para que as classes não precisem fazer isto, ou seja elas nunca vão receber um valor nulo.
-Voce pode tratar os valores como data, no formato que desejar, currency e assim por diante.
+Os atributos _userName_, _userLogin_ e _userPassword_ estão expostos para as outras classe, percebam que estou tratando os valores para que as classes não precisem fazer isto, ou seja elas nunca vão receber um valor nulo.
+
+Você pode tratar os valores como data, no formato que desejar, currency e assim por diante.
  
+##### Método Static 
 >_O Swift permite criar propriedades e métodos que pertencem a um tipo, em vez de instâncias de um tipo. Isso é útil para organizar seus dados de maneira significativa, armazenando dados compartilhados. Swift chama essas propriedades compartilhadas de "propriedades estáticas", e você cria uma apenas usando a palavra-chave estática. Feito isso, você acessa a propriedade usando o nome completo do tipo._
  
 Criei um método static para facilitar nossa vida, mas existem outras maneiras de se criar, eu sugiro termos um outro padrão envolvido nesta hora uma Factory e aí podemos ter uma Classe Manager, uma Bussines e uma Provider mas isto é assunto para um outro tutoria.
@@ -251,6 +255,8 @@ func initialize(loginViewModel: LoginViewModel) {
  
 ViewModel cuida de toda regra de negócio, nunca vai apresentar um dado na tela por exemplo.
 ViewController cuida da parte visual mostrar valores e pegar valores, nunca vai salvar os dados no banco ou mandar para uma api ela vai mandar para a ViewModel que fará isto.
+
+![](https://github.com/MoacirParticular/Login-MVVM-C/blob/main/Arquivos/euNaoAcredito.png)
  
 Existe muito material falando sobre este assunto na internet, basta um pouco de paciência e dedicação.
  
