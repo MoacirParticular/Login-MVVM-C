@@ -1,5 +1,5 @@
 # MVVM-C primeira parte Coordinator.
-###### Aqui [neste repositorio](https://github.com/MoacirParticular/Login-MVVM-C) tem o projeto, baixe o repositorio faça o Tutorial, use o projeto como exemplo altere, crie diversa-se,
+###### Aqui [neste repositorio](https://github.com/MoacirParticular/Login-MVVM-C) tem o projeto, baixe o repositorio faça o Tutorial, use o projeto como exemplo altere, crie divirta-se,
 
 ### O que é um Coordinator?
  
