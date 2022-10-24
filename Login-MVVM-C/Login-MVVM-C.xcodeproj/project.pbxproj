@@ -24,7 +24,7 @@
 		3F6591AA2657BE99001043EA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6591A92657BE99001043EA /* LoginModel.swift */; };
 		3F6591AC2657BF88001043EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6591AB2657BF88001043EA /* LoginViewModel.swift */; };
 		3F6591AF2657C035001043EA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6591AE2657C035001043EA /* String+.swift */; };
-		3F6591B22657C2C4001043EA /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6591B12657C2C4001043EA /* HTTPManager.swift */; };
+		9932AE962906FFCB00349168 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932AE952906FFCB00349168 /* HTTPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		3F6591A92657BE99001043EA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		3F6591AB2657BF88001043EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3F6591AE2657C035001043EA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		3F6591B12657C2C4001043EA /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		9932AE952906FFCB00349168 /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +241,7 @@
 		3F6591B02657C297001043EA /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				3F6591B12657C2C4001043EA /* HTTPManager.swift */,
+				9932AE952906FFCB00349168 /* HTTPManager.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -383,9 +383,9 @@
 				3F659197265430F0001043EA /* Coordinator.swift in Sources */,
 				3F6591692654304E001043EA /* ViewController.swift in Sources */,
 				3F6591AA2657BE99001043EA /* LoginModel.swift in Sources */,
+				9932AE962906FFCB00349168 /* HTTPManager.swift in Sources */,
 				3F65919926543113001043EA /* LoginCoordinator.swift in Sources */,
 				3F6591652654304E001043EA /* AppDelegate.swift in Sources */,
-				3F6591B22657C2C4001043EA /* HTTPManager.swift in Sources */,
 				3F6591672654304E001043EA /* SceneDelegate.swift in Sources */,
 				3F6591AF2657C035001043EA /* String+.swift in Sources */,
 				3F6591A326543514001043EA /* ColorConstant.swift in Sources */,
