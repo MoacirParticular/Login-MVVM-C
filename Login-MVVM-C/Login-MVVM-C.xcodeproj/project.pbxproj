@@ -151,7 +151,7 @@
 		3F659194265430B2001043EA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3F6591B02657C297001043EA /* Dependencies */,
+				3F6591B02657C297001043EA /* HTTPManager */,
 				3F6591AD2657C00F001043EA /* Extensions */,
 				3F659195265430CF001043EA /* Coordinator */,
 				3F6591A0265434D9001043EA /* Infrastructure */,
@@ -238,12 +238,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3F6591B02657C297001043EA /* Dependencies */ = {
+		3F6591B02657C297001043EA /* HTTPManager */ = {
 			isa = PBXGroup;
 			children = (
 				9932AE952906FFCB00349168 /* HTTPManager.swift */,
 			);
-			path = Dependencies;
+			path = HTTPManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
